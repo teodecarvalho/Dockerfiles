@@ -1,0 +1,17 @@
+version: '3.3'
+services:
+   base:
+      build: .
+      image: base
+      container_name: base
+      volumes: 
+         - ./db:/Public
+   checkm:
+      build: ./checkm/
+      image: checkm
+      container_name: checkm
+      tty: true
+      volumes:
+         - ./db:/Public
+      depends_on:
+         - base 
