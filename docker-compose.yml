@@ -15,3 +15,12 @@ services:
          - ./db:/Public
       depends_on:
          - base 
+   spades:
+      build: ./spades/
+      image: spades
+      container_name: spades
+      volumes: 
+         - ./db:/Public
+      tty: true
+      depends_on:
+         - base
