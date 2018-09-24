@@ -24,3 +24,10 @@ services:
       tty: true
       depends_on:
          - base
+   pyani:
+      build: ./pyani/
+      image: pyani
+      container_name: pyani
+      volumes:
+         - ./db:/Public
+      tty: true
