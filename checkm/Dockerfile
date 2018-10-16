@@ -1,4 +1,4 @@
-FROM base
+FROM teotonio/base
 LABEL maintainer="Teotonio <teo.decarvalho@gmail.com>"
 RUN conda install -y checkm-genome=1.0.11 aria2 --no-update-deps && \
     conda clean --all -y
