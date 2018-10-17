@@ -5,7 +5,10 @@ RUN apt-get update && apt-get install -y \
 			       mummer \
 			       && \
     pip3 install --upgrade pip && \
-    pip3 install pyani
+    pip3 install pyani && \
+    mkdir /Public
+
+
 
 WORKDIR /Public
 
