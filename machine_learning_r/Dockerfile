@@ -85,6 +85,9 @@ RUN install2.r \
     xgboost \
 && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
 
+RUN install2.r \
+    mlr
+
 VOLUME /Public
 WORKDIR /Public
 
