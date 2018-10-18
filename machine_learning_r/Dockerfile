@@ -18,7 +18,6 @@ RUN install2.r --error \
     RcppEigen \
 && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
 
-# install related packages
 RUN install2.r \
     ada \
     adabag \
