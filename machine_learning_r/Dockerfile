@@ -16,6 +16,7 @@ RUN install2.r --error \
     pbkrtest \
     profileModel \
     RcppEigen \
+    sp \
 && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
 
 RUN install2.r \
@@ -27,7 +28,6 @@ RUN install2.r \
     e1071 \
     earth \
     elasticnet \
-    extraTrees \
     fastAdaboost \
     foreach \
     gam \
@@ -70,7 +70,6 @@ RUN install2.r \
     rrlda \
     rsample \
     RSNNS \
-    RWeka \
     sda \
     sdwd \
     snn \
@@ -80,7 +79,6 @@ RUN install2.r \
     spls \
     stepPlr \
     superpc \
-    supervisedPRIM \
     vbmp \
     VGAM \
     wsrf \
