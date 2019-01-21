@@ -11,8 +11,8 @@ cd Dockerfiles
 sh run_docker_compose_on_gce.sh
 
 ## Download files from Dropbox
-docker exec checkm aria2c -x 16 -s 16 https://www.dropbox.com/s/765cwvoohtk04jw/UFLA06-13_S5_L001_R2_001.fastq.gz?dl=1
-docker exec checkm aria2c -x 16 -s 16 https://www.dropbox.com/s/si7xwz7f8qk2iz7/UFLA06-13_S5_L001_R1_001.fastq.gz?dl=1
+docker exec checkm aria2c -x 16 -s 16 https://www.dropbox.com/s/6gb9zxsh5mpu66u/UFLA06-13_S5_L001_R2_001.fastq.gz?dl=1
+docker exec checkm aria2c -x 16 -s 16 https://www.dropbox.com/s/66loht5kvw6n9cq/UFLA06-13_S5_L001_R1_001.fastq.gz?dl=1
 
 ## Assembly genome
 docker exec -it spades spades.py \
