@@ -12,7 +12,7 @@ RUN conda install --quiet --yes pandas \
     conda clean -tipsy
 
 RUN apt-get update && \
-    apt-get install libssl1.0.0 libssl-dev && \
+    apt-get -yq install libssl1.0.0 libssl-dev && \
     ln -s libssl.so.1.0.0 libssl.so.10 && \
 	ln -s libcrypto.so.1.0.0 libcrypto.so.10 
 
