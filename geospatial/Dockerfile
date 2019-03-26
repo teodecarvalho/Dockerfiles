@@ -9,6 +9,7 @@ RUN Rscript -e 'library(devtools); install_github("dkahle/ggmap", ref = "tidyup"
 RUN install2.r \
 	car \
 	gvlma \
-	emmeans
+	emmeans \
+	multcompView
 
 ENV PASSWORD="teo"
