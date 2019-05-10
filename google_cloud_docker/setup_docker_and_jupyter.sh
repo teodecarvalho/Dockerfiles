@@ -20,6 +20,6 @@ export PATH=~/miniconda/bin:$PATH
 
 echo "export PATH=~/miniconda/bin:$PATH" >> ~/.bashrc
 
-conda install jupyter --yes
+~/miniconda/bin/conda install jupyter --yes
 
 
