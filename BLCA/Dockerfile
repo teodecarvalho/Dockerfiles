@@ -1,15 +1,13 @@
-FROM conda/miniconda2
+FROM condaforge/mambaforge
 
-RUN conda config --add channels r && \
-    conda config --add channels conda-forge && \
-    conda config --add channels bioconda && \
-    conda install -y "blast>2.9" clustalo=1.2.4 muscle=3.8.31 \
-                     wget unzip git && \
-    pip install biopython==1.73
-    
+RUN mamba install -y -c bioconda blast=2.14.1
+RUN mamba install -y -c bioconda clustalo=1.2.4
+RUN mamba install -y -c bioconda muscle=5.1 
+RUN mamba install -y wget 
+RUN mamba install -y unzip 
+RUN mamba install -y git
+RUN mamba install -y nano
+RUN pip install biopython
+
 RUN git clone https://github.com/qunfengdong/BLCA.git
-    cd BLCA &&\
-    python 1.subset_db_acc.py 
-
-
-
+RUN cd BLCA && python 1.subset_db_acc.py
